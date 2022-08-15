@@ -26,7 +26,7 @@ let cappuccino = {
   "price": 6
 };
 
-console.log(`The coffee machine has:
+alert(`The coffee machine has:
 400 ml of water
 540 ml of milk
 120 g of coffee beans
@@ -36,9 +36,9 @@ $550 of money`);
 let action = prompt('Write action (buy, fill, take):');
 
 if (action === 'take') {
-  console.log(`I gave you ${machine["balance"]}`);
+  alert(`I gave you ${machine["balance"]}`);
   machine.balance = 0;
-  console.log(`The coffee machine has:
+  alert(`The coffee machine has:
 400 ml of water
 540 ml of milk
 120 g of coffee beans
@@ -55,7 +55,7 @@ ${machine["balance"]} of money`);
   machine.coffee = machine["coffee"] + addCoffee;
   machine.cups = machine["cups"] + addCups;
   
-  console.log(`The coffee machine has:
+  alert(`The coffee machine has:
 ${machine["water"]} ml of water
 ${machine["milk"]} ml of milk
 ${machine["coffee"]} g of coffee beans
@@ -70,7 +70,7 @@ machine.coffee = machine["coffee"] - 16;
 machine.balance = machine["balance"] + 4;
 machine.cups = machine["cups"] - 1;
 
-console.log(`The coffee machine has:
+alert(`The coffee machine has:
 ${machine["water"]} ml of water
 ${machine["milk"]} ml of milk
 ${machine["coffee"]} g of coffee beans
@@ -84,7 +84,7 @@ machine.coffee = machine["coffee"] - 20;
 machine.balance = machine["balance"] + 7;
 machine.cups = machine["cups"] - 1;
 
-console.log(`The coffee machine has:
+alert(`The coffee machine has:
 ${machine["water"]} ml of water
 ${machine["milk"]} ml of milk
 ${machine["coffee"]} g of coffee beans
@@ -97,7 +97,7 @@ machine.coffee = machine["coffee"] - 12;
 machine.balance = machine["balance"] + 6;
 machine.cups = machine["cups"] - 1;
 
-console.log(`The coffee machine has:
+alert(`The coffee machine has:
 ${machine["water"]} ml of water
 ${machine["milk"]} ml of milk
 ${machine["coffee"]} g of coffee beans

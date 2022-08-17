@@ -69,8 +69,8 @@ while (true) {
     
     if (drink === 1) { 
     
-    if (machine.water > espresso.water) {
-      if (machine.coffee > espresso.coffee) {
+    if (machine.water >= espresso.water) {
+      if (machine.coffee >= espresso.coffee) {
         if (machine.cups > 0) {
           alert('I have enough resources, making you a coffee!');
         } else {
@@ -94,9 +94,9 @@ while (true) {
   }
      if (drink === 2) {
       
-      if (machine.water > latte.water) {
-        if (machine.milk > latte.milk) {
-          if (machine.coffee > latte.coffee) {
+      if (machine.water >= latte.water) {
+        if (machine.milk >= latte.milk) {
+          if (machine.coffee >= latte.coffee) {
             if (machine.cups > 0) {
               alert('I have enough resources, making you a coffee!');
             } else {
@@ -127,9 +127,9 @@ while (true) {
     
     if (drink === 3) {
       
-      if (machine.water > cappuccino.water) {
-        if (machine.milk > cappuccino.milk) {
-          if (machine.coffee > cappuccino.coffee) {
+      if (machine.water >= cappuccino.water) {
+        if (machine.milk >= cappuccino.milk) {
+          if (machine.coffee >= cappuccino.coffee) {
             if (machine.cups > 0) {
               alert('I have enough resources, making you a coffee!');
             } else {

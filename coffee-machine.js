@@ -36,16 +36,16 @@ while (true) {
 
   if (action === 'remaining') {
     alert(`The coffee machine has:
-  ${machine["water"]} ml of water
-  ${machine["milk"]} ml of milk
-  ${machine["coffee"]} g of coffee beans
-  ${machine["cups"]} disposable cups
-  ${machine["balance"]} of money`);
+  ${machine.water} ml of water
+  ${machine.milk} ml of milk
+  ${machine.coffee} g of coffee beans
+  ${machine.cups} disposable cups
+  ${machine.balance} of money`);
   continue;
   }
 
   if (action === 'take') {
-    alert(`I gave you ${machine["balance"]}`);
+    alert(`I gave you ${machine.balance}`);
     machine.balance = 0;
     continue;
   } 
